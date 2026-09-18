@@ -1,4 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permisos: cada uno se solicita bajo demanda con explicacion previa en su modulo -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- modulo 2.7 mapas -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- modulo 2.7 mapas -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/> <!-- modulo 2.3 notificaciones -->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!-- modulo 2.9 vibracion -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- modulo 2.9 red -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- modulo 2.12 APIs y servicios web -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- modulo 2.10 foto -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- modulo 2.10 audio -->
     <application
         android:label="first_project"
         android:name="${applicationName}"
@@ -25,8 +34,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Key demo restringida de Google Maps (reemplazable por key propia, ver modulo_2_7_mapas/README.md) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="TU_API_KEY_DEMO_AQUI" />
         <!-- Don't delete the meta-data below.
-             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
