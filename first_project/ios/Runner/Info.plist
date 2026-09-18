@@ -26,6 +26,13 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<!-- Descripciones de uso: cada permiso se solicita bajo demanda con explicacion previa en su modulo -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>La demo del modulo 2.7 muestra tu ubicacion en un mapa.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>La demo del modulo 2.10 toma una foto.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>La demo del modulo 2.10 graba un audio corto.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

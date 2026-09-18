@@ -1,0 +1,63 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+app.*.symbols
+app.*.map.json
+.widget_preview/
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+*.jks
+*.keystore
+local.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/FlutterPluginRegistrant/
+ios/Flutter/Generated.xcconfig
+ios/ServiceDefinitions.json
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+xcuserdata/
+
+# Claves y secretos locales 
+*.env
+google-maps-key.txt
+
+# Universal
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+.vscode/
+
+# SpecKit 
+.specify/
+specs/
+
+# OpenCode 
+.opencode/
+opencode.json
+opencode.jsonc
+.opencode.json
+.opencode.jsonc
+
+# Agents y Skills
+.agents/
+skills/
+.skills/
+skills-lock.json
