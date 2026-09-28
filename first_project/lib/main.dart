@@ -1,4 +1,4 @@
-// App de demostración: menú con 10 módulos (2.3–2.12).
+// App de demostración: menú con 11 módulos (2.3–2.13).
 // Navegación por rutas nombradas (constitución II): toda pantalla a ≤ 2
 // toques desde '/'. `onUnknownRoute` evita pantallas negras (contrato).
 //
@@ -6,6 +6,7 @@
 // git `legacy-homescreen-before-menu`; su contenido de widgets
 // migró a los módulos 2.4/2.5 (T031/T032).
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'menu/menu_screen.dart';
 import 'modules/modulo_2_3_dialogos/screen.dart';
@@ -18,8 +19,20 @@ import 'modules/modulo_2_9_estado/screen.dart';
 import 'modules/modulo_2_10_multimedia/screen.dart';
 import 'modules/modulo_2_11_almacenamiento/screen.dart';
 import 'modules/modulo_2_12_apis/screen.dart';
+import 'modules/modulo_2_13_crud/screen.dart';
+import 'modules/modulo_2_13_crud/supabase_config.dart';
 
-void main() {
+void main() async {
+  // Supabase solo si el estudiante/docente pasó --dart-define con las
+  // claves (módulo 2.13). Sin flags la app arranca igual y el módulo
+  // muestra el aviso "Falta configurar" en vez de fallar.
+  WidgetsFlutterBinding.ensureInitialized();
+  if (!SupabaseConfig.faltaConfiguracion) {
+    await Supabase.initialize(
+      url: SupabaseConfig.url,
+      publishableKey: SupabaseConfig.anonKey,
+    );
+  }
   runApp(const MyApp());
 }
 
@@ -59,6 +72,7 @@ class MyApp extends StatelessWidget {
         '/modulo-2-10': (context) => const Modulo210MultimediaScreen(),
         '/modulo-2-11': (context) => const Modulo211AlmacenamientoScreen(),
         '/modulo-2-12': (context) => const Modulo212ApisScreen(),
+        '/modulo-2-13': (context) => const Modulo213CrudScreen(),
       },
       // Ruta desconocida → pantalla de error con vuelta al menú.
       onUnknownRoute: (settings) => MaterialPageRoute(
