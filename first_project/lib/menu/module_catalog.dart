@@ -101,4 +101,11 @@ const List<ModuloMenu> kModulos = [
     icono: Icons.cloud_outlined,
     ruta: '/modulo-2-12',
   ),
+  ModuloMenu(
+    numero: '2.13',
+    titulo: 'CRUD Canciones',
+    descripcionCorta: 'Crear, leer, editar y borrar canciones en Supabase.',
+    icono: Icons.library_music_outlined,
+    ruta: '/modulo-2-13',
+  ),
 ];

@@ -17,6 +17,7 @@ void main() {
     '/modulo-2-10': '2.10 · Multimedia: cámara, audio y video',
     '/modulo-2-11': '2.11 · Almacenamiento',
     '/modulo-2-12': '2.12 · APIs y Servicios Web',
+    '/modulo-2-13': '2.13 · CRUD Canciones',
   };
 
   testWidgets('Cada tarjeta navega a su pantalla y vuelve al menú',

@@ -1,7 +1,7 @@
 // Suite principal de la app (T037):
 // el antiguo smoke test del contador quedó obsoleto al reemplazar el
 // HomeScreen monolítico por el menú principal. Esta suite verifica el
-// arranque en el menú con las 10 tarjetas.
+// arranque en el menú con las 11 tarjetas (2.3–2.13).
 import 'package:first_project/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -13,6 +13,6 @@ void main() {
 
     expect(find.text('Desarrollo móvil'), findsOneWidget);
     expect(find.text('Módulos'), findsOneWidget);
-    expect(find.byType(Card), findsNWidgets(10));
+    expect(find.byType(Card), findsNWidgets(11));
   });
 }
