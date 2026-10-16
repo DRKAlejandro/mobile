@@ -15,6 +15,9 @@ Proyecto para compartir las herramientas de desarrollo móvil vistas en clase, c
   - 2.10 Multimedia (image_picker, record, audioplayers, video_player)
   - 2.11 Almacenamiento (shared_preferences)
   - 2.12 APIs (http + PokeAPI)
+  - 2.13 CRUD canciones (Supabase, --dart-define)
+  - Mapas2 Mapas y rutas abiertas (OSM: flutter_map + latlong2 + OSRM, sin API key)
+- `pizza_pizza/`: app de pizzería (login, registro, bienvenida + esquema SQL Supabase en `base de datos/tabla_pizzeria.sql`).
 - `first_project/lib/shared/`: widgets y servicios comunes (permisos, sensores, manejo de errores).
 - `first_project/test/`: pruebas de navegación, menú y widgets.
 - `presentacion_movil.pptx`: presentación de apoyo.

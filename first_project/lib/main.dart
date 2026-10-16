@@ -21,6 +21,7 @@ import 'modules/modulo_2_11_almacenamiento/screen.dart';
 import 'modules/modulo_2_12_apis/screen.dart';
 import 'modules/modulo_2_13_crud/screen.dart';
 import 'modules/modulo_2_13_crud/supabase_config.dart';
+import 'modules/modulo_mapas2_osm/screen.dart';
 
 void main() async {
   // Supabase solo si el estudiante/docente pasó --dart-define con las
@@ -73,6 +74,7 @@ class MyApp extends StatelessWidget {
         '/modulo-2-11': (context) => const Modulo211AlmacenamientoScreen(),
         '/modulo-2-12': (context) => const Modulo212ApisScreen(),
         '/modulo-2-13': (context) => const Modulo213CrudScreen(),
+        '/mapas2-osm': (context) => const Mapas2OsmScreen(),
       },
       // Ruta desconocida → pantalla de error con vuelta al menú.
       onUnknownRoute: (settings) => MaterialPageRoute(

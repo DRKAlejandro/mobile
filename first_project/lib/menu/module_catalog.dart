@@ -108,4 +108,11 @@ const List<ModuloMenu> kModulos = [
     icono: Icons.library_music_outlined,
     ruta: '/modulo-2-13',
   ),
+  ModuloMenu(
+    numero: 'Mapas2',
+    titulo: 'Mapas y rutas abiertas (OSM)',
+    descripcionCorta: 'Mapa OpenStreetMap: puntos y rutas sin claves de pago.',
+    icono: Icons.public_outlined,
+    ruta: '/mapas2-osm',
+  ),
 ];
