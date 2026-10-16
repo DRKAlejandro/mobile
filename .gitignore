@@ -61,3 +61,9 @@ opencode.jsonc
 skills/
 .skills/
 skills-lock.json
+
+# Revisión privada del docente (repos de alumnos clonados, no se suben)
+repositorios/
+revision_privada.html
+revision_parcial2.html
+revision_datos.json
